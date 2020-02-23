@@ -1,28 +1,114 @@
 ﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
-    <link rel="stylesheet" href="css/responsive.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>BogdanJankovic</title>
     <script src="https://kit.fontawesome.com/64136a29e4.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!--HEADER-->
-    <header>
-        <div id="logo"><h1>BOGDAN JANKOVIC</h1></div>
-        <nav>
-            <ul>
-                <li><a href="" target="_blank"><p>ABOUT</p></i></a></li>
-                <li><a href="" target="_blank"><p>WORK</p></a></li>
-                <li><a href="" target="_blank"><p>NOTES</p></a></li>
-            </ul>
-        </nav>
+    <header id="top">
+        <div class="container">
+            <div class="typewriter"><h1>BOGDAN JANKOVIC</h1></div>
+            <nav>
+                <ul>
+                    <li><a href="http://" target="_blank"><p>ABOUT</p></a></li>
+                    <li><a href="http://" target="_blank"><p>PROJECTS</p></a></li>
+                    <li><a href="http://" target="_blank"><p>CONTACT</p></a></li>
+                    <li><a href="http://" target="_blank"><p>SKILLS</p></a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <!--SREDINA-->
-    <section id="sredina">
-        <div><h1>Video igrice</h1></div>
+    <!--MIDDLE-->
+    <section id="middle">
+        <div class="container">
+            <div id="mid-relative1">
+                <p>"The desire to create is one of the deepest yearnings of the human soul." -- Dieter F. Uchtdorf</p>
+            </div>
+            <div id="mid-relative2"><p> "Creativity is inventing, experimenting, growing, taking risks, breaking rules, making mistakes, and having fun." -- Mary Lou Cook</p></div>
+        </div>
     </section>
+    <article>
+        <div class="container">
+            <figure class="avatar"><img src="img/myAvatar.png" alt="myFace"><div><p>Hello, my name is Bogdan.I am an aspiring student currently attending ICT College of Applied Studies. I intend to become a full-fledged front-end developer in the near future. Welcome to my website! </p></div></figure>
+        </div>
+    </article>
+    <!--GALLERY-->
+   <section id="gallery">
+       <div class="container">
+           <header>
+               <h1>PROJECTS</h1>
+           </header>
+           <article id="flex">
+                <figure>
+                    <img src="img/locknrest.png" alt="locknrest">
+                   
+                </figure>
+                <figure>
+                    <img src="img/MONO.png" alt="MONO">
+                    
+                       
+                </figure>
+                <figure>
+                   
+                    <img src="img/neonflamingo.png" alt="neonflamingo"> 
+                    
+                </figure>
+                <figure>
+                   
+                    <img src="img/omg.png" alt="omg">
+                    
+                </figure>
+           </article>
+       </div>
+    </section>
+    <!--CONTACT-->
+    <div class="container">
+        <figure class="avatar"><img src="img/myAvatar.png" alt="myFace"><div><p>I am currently a freelancer, readily accepting any kind of work for a reasonable fee. Feel free to contact me by filling the form bellow.</p></div></figure>
+    </div>
+    <!--FORM-->
+    <section id="form">
+        <div class="container">
+            <form action="#" method="get">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>FIRST NAME: </th> <td><input type="text" placeholder="John" name="name" required></td>
+                        </tr>
+                        <tr>
+                            <th>LAST NAME: </th><td><input type="text" placeholder="Doe" name="surname" required></td>
+                        </tr>
+                        <tr>
+                            <th>PHONE NUMBER: </th> <td><input type="tel" name="phone" placeholder="XXX-XXX-XXX" required></td>
+                        </tr>
+                        <tr>
+                            <th>E-MAIL: </th> <td><input type="email" name="email" placeholder="example@gmail.com" required></td>
+                        </tr>
+                        <tr>
+                            <th>YOUR INQUIRY: </th> <td><textarea name="text" cols="30" rows="10" placeholder="Write something..." required></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="submit"  value="SEND INQUIRY"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </section>
+    <!--FOOTER-->
+    <footer>
+        <div class="container">
+            <div id="botleft">
+                <a href="http://"><i class="fab fa-facebook" aria-hidden="true"></i></a> <a href="http://"><i class="fab fa-instagram"></i></a> <a href="http://"><i class="fab fa-twitch"></i></a> <a href="http://"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div id="botright">
+                <a href="http://"><i class="fab fa-sass"></i></a><a href="http://"><i class="fas fa-mobile"></i></a> <a href="http://"><i class="fa fa-sitemap" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>

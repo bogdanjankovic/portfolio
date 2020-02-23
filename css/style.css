@@ -1,22 +1,109 @@
 @font-face {
-  font-family: TradeWinds;
-  src: url(TradeWinds-Regular.ttf);
+  font-family: OdibeeSans-Regular;
+  src: url(OdibeeSans-Regular.ttf);
 }
 
 @font-face {
-  font-family: Dancing Script-Regular;
-  src: url(DancingScript-VariableFont_wght.ttf);
+  font-family: Lacquer-Regular;
+  src: url(Lacquer-Regular.ttf);
 }
 
 * {
   padding: 0px;
   margin: 0px;
-  font-family: 'TradeWinds';
+}
+
+.typewriter h1 {
+  overflow: hidden;
+  border-right: .15em solid transparent;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  -webkit-animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end 8;
+          animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end 8;
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+body {
+  color: #fff;
+  background-color: #1a1a1c;
+}
+
+.container {
+  width: 95%;
+  margin: 0px auto;
+}
+
+a, header h1 {
+  text-decoration: none;
+  color: #fff;
+  font-family: OdibeeSans-Regular;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+header h1 {
+  font-size: 40px;
+}
+
+#top {
+  -webkit-box-shadow: 2px 2px 8px #000;
+          box-shadow: 2px 2px 8px #000;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  background-color: #1a1a1c;
+  z-index: 1;
 }
 
 header {
-  background-color: #00f285;
-  color: #fff;
+  padding: 2%;
+}
+
+nav {
+  width: 30%;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul, header .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,22 +111,200 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-header h1 {
-  margin-top: 10%;
-  color: #f28500;
+nav ul li {
+  margin-right: 5%;
 }
 
-a {
-  text-decoration: none;
+#middle {
+  background-image: url("../img/development.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 3%;
+  position: relative;
+  min-height: 40em;
 }
 
-ul {
-  list-style-type: none;
+#mid-relative1 p, #mid-relative2 p {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  position: absolute;
+  width: 30%;
+  border: 1px  solid blue;
+  border-radius: 20px 40px;
+  padding: 1%;
+  -webkit-box-shadow: 2px 2px #000;
+          box-shadow: 2px 2px #000;
+}
+
+#mid-relative1 p {
+  color: #c7d2d8;
+  top: 8%;
+  left: 66%;
+  background-color: #495c6a;
+}
+
+#mid-relative2 p {
+  color: #495c6a;
+  bottom: 10%;
+  right: 66%;
+  background-color: #c7d2d8;
+}
+
+figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+figure div {
+  width: 90%;
+  padding: 5%;
+}
+
+figure div p {
+  font-size: 25px;
+  font-family: Lacquer-Regular;
+  text-align: center;
+}
+
+figure img {
+  border: 1px solid blue;
+  border-radius: 100%;
+}
+
+#gallery header h1 {
+  color: #495c6a;
+  text-align: center;
+}
+
+#gallery #flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#gallery figure {
+  margin: 5%;
+}
+
+#gallery figure img {
+  position: relative;
+}
+
+#gallery figure img:hover {
+  opacity: 0.7;
+}
+
+#gallery figure .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.avatar {
+  padding: 2%;
+}
+
+#gallery, #form {
+  background-color: #c7d2d8;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color: #495c6a;
+}
+
+form {
+  width: 90%;
+  padding: 1%;
+  font-size: 25px;
+  font-family: Lacquer-Regular;
+}
+
+form table {
+  margin: 0 auto;
+}
+
+form table td {
+  padding: 2%;
+  text-align: center;
+}
+
+form input, form textarea {
+  padding: 2%;
+  background-color: #c7d2d8;
+  border-radius: 20px 40px;
+  border: 1px solid blue;
+  -webkit-box-shadow: 2px 2px #000;
+          box-shadow: 2px 2px #000;
+}
+
+form textarea:focus, form input:focus {
+  outline: none;
+}
+
+form input::-webkit-input-placeholder, form textarea, form input[type="submit"] {
+  color: #495c6a;
+  font-size: 15px;
+  font-family: Lacquer-Regular;
+}
+
+form input:-ms-input-placeholder, form textarea, form input[type="submit"] {
+  color: #495c6a;
+  font-size: 15px;
+  font-family: Lacquer-Regular;
+}
+
+form input::-ms-input-placeholder, form textarea, form input[type="submit"] {
+  color: #495c6a;
+  font-size: 15px;
+  font-family: Lacquer-Regular;
+}
+
+form input::placeholder, form textarea, form input[type="submit"] {
+  color: #495c6a;
+  font-size: 15px;
+  font-family: Lacquer-Regular;
+}
+
+form input[type="submit"]:hover {
+  background-color: blue;
+  color: #fff;
+}
+
+footer .container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,27 +315,15 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 10%;
 }
 
-ul li {
-  margin: 5%;
-  width: 50%;
+footer .container #botleft, footer .container #botright {
+  text-align: center;
+  width: 40%;
 }
 
-ul li p {
-  font-size: 25px;
-  color: #f28500;
-}
-
-#logo img {
-  width: 100px;
-}
-
-#sredina {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #00f285;
-  font-family: Dancing Script-Regular;
+footer .container #botleft i, footer .container #botright i {
+  font-size: 40px;
+  margin: 2%;
 }
 /*# sourceMappingURL=style.css.map */
