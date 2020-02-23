@@ -1,10 +1,34 @@
-﻿@media screen and (max-width:75em){
-    #gallery figure img{
-        max-width: 50%;
+﻿@media screen and (max-width:720px){
+    #gallery figure{ width:40%;} 
         #flex{
-            display:flex;
-            flex:{
-                wrap:nowrap;
-            }
+            flex-wrap:nowrap;
+    }
+}
+@media screen and (max-width:480px){
+    a,header h1{
+        font-size: 2vw;
+    }
+}
+@media screen and (max-width:320px){
+    a,header h1{
+        font-size: 3vw;
+        justify-content: space-evenly;
+    }
+    #middle{
+        background-position: center;
+    }
+}
+@media screen and (max-width:51em){
+    input::placeholder,textarea,input[type="submit"]{
+        font-size: 4vw;
+    }
+    .avatar img{
+        max-width:20%;
+    }
+    #mid-relative1 p,#mid-relative2 p{
+        position: relative;
+    }
+    #botleft i,#botright i{
+        font-size: 2vw;
     }
 }

@@ -1,4 +1,55 @@
-@import url(c:\Users\Blexout\Documents\GitHub\portfolio\css\responsive.css);
+@media screen and (max-width: 720px) {
+  #gallery figure {
+    width: 40%;
+  }
+  #flex {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  a, header h1 {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  a, header h1 {
+    font-size: 3vw;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #middle {
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 51em) {
+  input::-webkit-input-placeholder, textarea, input[type="submit"] {
+    font-size: 4vw;
+  }
+  input:-ms-input-placeholder, textarea, input[type="submit"] {
+    font-size: 4vw;
+  }
+  input::-ms-input-placeholder, textarea, input[type="submit"] {
+    font-size: 4vw;
+  }
+  input::placeholder, textarea, input[type="submit"] {
+    font-size: 4vw;
+  }
+  .avatar img {
+    max-width: 20%;
+  }
+  #mid-relative1 p, #mid-relative2 p {
+    position: relative;
+  }
+  #botleft i, #botright i {
+    font-size: 2vw;
+  }
+}
+
 @font-face {
   font-family: OdibeeSans-Regular;
   src: url(OdibeeSans-Regular.ttf);
@@ -78,12 +129,15 @@ a, header h1 {
   text-decoration: none;
   color: #fff;
   font-family: OdibeeSans-Regular;
-  font-size: 25px;
-  letter-spacing: 2px;
+  font-size: 2vw;
+}
+
+#HiddenMenu {
+  display: none;
 }
 
 header h1 {
-  font-size: 40px;
+  font-size: 2vw;
 }
 
 #top {
@@ -140,11 +194,10 @@ nav ul li {
 }
 
 #mid-relative1 p, #mid-relative2 p {
-  font-size: 20px;
+  font-size: 2vw;
   font-weight: bold;
   font-style: italic;
   position: absolute;
-  width: 30%;
   border: 1px  solid blue;
   border-radius: 20px 40px;
   padding: 1%;
@@ -185,7 +238,7 @@ figure div {
 }
 
 figure div p {
-  font-size: 25px;
+  font-size: 2vw;
   font-family: Lacquer-Regular;
   text-align: center;
 }
@@ -240,7 +293,7 @@ figure img {
 form {
   width: 90%;
   padding: 1%;
-  font-size: 25px;
+  font-size: 2vw;
   font-family: Lacquer-Regular;
 }
 
@@ -268,25 +321,25 @@ form textarea:focus, form input:focus {
 
 form input::-webkit-input-placeholder, form textarea, form input[type="submit"] {
   color: #495c6a;
-  font-size: 15px;
+  font-size: 1vw;
   font-family: Lacquer-Regular;
 }
 
 form input:-ms-input-placeholder, form textarea, form input[type="submit"] {
   color: #495c6a;
-  font-size: 15px;
+  font-size: 1vw;
   font-family: Lacquer-Regular;
 }
 
 form input::-ms-input-placeholder, form textarea, form input[type="submit"] {
   color: #495c6a;
-  font-size: 15px;
+  font-size: 1vw;
   font-family: Lacquer-Regular;
 }
 
 form input::placeholder, form textarea, form input[type="submit"] {
   color: #495c6a;
-  font-size: 15px;
+  font-size: 1vw;
   font-family: Lacquer-Regular;
 }
 
@@ -317,7 +370,7 @@ footer .container #botleft, footer .container #botright {
 }
 
 footer .container #botleft i, footer .container #botright i {
-  font-size: 40px;
+  font-size: 3vw;
   margin: 2%;
 }
 /*# sourceMappingURL=style.css.map */

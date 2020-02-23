@@ -1,29 +1,52 @@
-@media screen and (max-width:84em){
-    #gallery figure{ width:40%; 
-        img{
-        width:25%;
-        #flex{
-            flex-wrap:nowrap;
-    }}
-}}
-@media screen and (max-width:74em){
-    a,header h1{
-        font-size: 2vw;
-    }
+@media screen and (max-width: 720px) {
+  #gallery figure {
+    width: 40%;
+  }
+  #flex {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
-@media screen and (max-width:64em){
-    a,header h1{
-        font-size: 1.5vw;
-    }
-    #middle{
-        background-position: center;
-    }
+
+@media screen and (max-width: 480px) {
+  a, header h1 {
+    font-size: 2vw;
+  }
 }
-@media screen and (max-width:51em){
-    nav ul,header .container{
-        justify-content: space-evenly;
-    }
-    #botleft, #botright i{
-        font-size: 2vw;
-    }
+
+@media screen and (max-width: 320px) {
+  a, header h1 {
+    font-size: 3vw;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #middle {
+    background-position: center;
+  }
 }
+
+@media screen and (max-width: 51em) {
+  input::-webkit-input-placeholder, textarea, input[type="submit"] {
+    font-size: 4vw;
+  }
+  input:-ms-input-placeholder, textarea, input[type="submit"] {
+    font-size: 4vw;
+  }
+  input::-ms-input-placeholder, textarea, input[type="submit"] {
+    font-size: 4vw;
+  }
+  input::placeholder, textarea, input[type="submit"] {
+    font-size: 4vw;
+  }
+  .avatar img {
+    max-width: 20%;
+  }
+  #mid-relative1 p, #mid-relative2 p {
+    position: relative;
+  }
+  #botleft i, #botright i {
+    font-size: 2vw;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
