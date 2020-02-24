@@ -258,41 +258,41 @@ form table td {
   text-align: center;
 }
 
-form input, form textarea {
-  padding: 2%;
+form input {
+  padding: 2vw;
   background-color: #c7d2d8;
-  border-radius: 20px 40px;
-  border: 1px solid blue;
-  -webkit-box-shadow: 2px 2px #000;
-          box-shadow: 2px 2px #000;
+  border-radius: 2vw 2vw;
+  border: 0.3vw solid blue;
+  -webkit-box-shadow: 0.3vw 0.3vw #000;
+          box-shadow: 0.3vw 0.3vw #000;
 }
 
-form textarea:focus, form input:focus {
+form input:focus {
   outline: none;
 }
 
-form input::-webkit-input-placeholder, form textarea, form input[type="submit"] {
+form input::-webkit-input-placeholder, form input[type="submit"] {
   color: #495c6a;
   font-size: 1vw;
   font-family: Lacquer-Regular;
   text-align: center;
 }
 
-form input:-ms-input-placeholder, form textarea, form input[type="submit"] {
+form input:-ms-input-placeholder, form input[type="submit"] {
   color: #495c6a;
   font-size: 1vw;
   font-family: Lacquer-Regular;
   text-align: center;
 }
 
-form input::-ms-input-placeholder, form textarea, form input[type="submit"] {
+form input::-ms-input-placeholder, form input[type="submit"] {
   color: #495c6a;
   font-size: 1vw;
   font-family: Lacquer-Regular;
   text-align: center;
 }
 
-form input::placeholder, form textarea, form input[type="submit"] {
+form input::placeholder, form input[type="submit"] {
   color: #495c6a;
   font-size: 1vw;
   font-family: Lacquer-Regular;
@@ -349,6 +349,7 @@ footer #magic {
     font-size: 4vw;
   }
   .avatar p {
+    font-size: 3vw;
     font-family: 'Arial';
     font-weight: bold;
   }
@@ -393,40 +394,27 @@ footer #magic {
     background-color: #495c6a;
     color: #c7d2d8;
   }
-  form, table, input::-webkit-input-placeholder, textarea, input[type="submit"] {
-    font-family: 'OdibeeSans-Regular';
-    font-size: 4vw;
-  }
-  form, table, input:-ms-input-placeholder, textarea, input[type="submit"] {
-    font-family: 'OdibeeSans-Regular';
-    font-size: 4vw;
-  }
-  form, table, input::-ms-input-placeholder, textarea, input[type="submit"] {
-    font-family: 'OdibeeSans-Regular';
-    font-size: 4vw;
-  }
-  form, table, input::placeholder, textarea, input[type="submit"] {
-    font-family: 'OdibeeSans-Regular';
-    font-size: 4vw;
-  }
   form {
     width: 100%;
   }
-  form input::-webkit-input-placeholder, form textarea, form input[type="submit"] {
-    font-family: 'OdibeeSans-Regular';
-    font-size: 2.5vw;
+  form table th, form table td {
+    font-size: 5vw;
   }
-  form input:-ms-input-placeholder, form textarea, form input[type="submit"] {
+  form input::-webkit-input-placeholder, form input[type="submit"] {
     font-family: 'OdibeeSans-Regular';
-    font-size: 2.5vw;
+    font-size: 4vw;
   }
-  form input::-ms-input-placeholder, form textarea, form input[type="submit"] {
+  form input:-ms-input-placeholder, form input[type="submit"] {
     font-family: 'OdibeeSans-Regular';
-    font-size: 2.5vw;
+    font-size: 4vw;
   }
-  form input::placeholder, form textarea, form input[type="submit"] {
+  form input::-ms-input-placeholder, form input[type="submit"] {
     font-family: 'OdibeeSans-Regular';
-    font-size: 2.5vw;
+    font-size: 4vw;
+  }
+  form input::placeholder, form input[type="submit"] {
+    font-family: 'OdibeeSans-Regular';
+    font-size: 4vw;
   }
 }
 
@@ -437,9 +425,6 @@ footer #magic {
   #flex {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-  }
-  textarea {
-    border-radius: 0;
   }
 }
 

@@ -6,6 +6,7 @@
     }
     .avatar p{
         font:{
+            size:3vw;
             family:'Arial';
             weight:bold;
         }
@@ -43,19 +44,16 @@
         background-color:#495c6a;
         color:#c7d2d8;
     }
-}
-    form,table,input::placeholder,textarea,input[type="submit"]{
-        font:{
-            family:'OdibeeSans-Regular';
-            size:4vw;
-        }
     }
     form{
+        table th,table td{
+            font-size: 5vw;
+        }
         width:100%;
-        input::placeholder,textarea,input[type="submit"]{
+        input::placeholder,input[type="submit"]{
             font:{
                 family:'OdibeeSans-Regular';
-                size:2.5vw;
+                size:4vw;
             }
         }
     }
@@ -64,9 +62,6 @@
     #gallery figure{ width:40%;} 
         #flex{
             flex-wrap:nowrap;
-    }
-    textarea{
-        border-radius: 0;
     }
 }
 @media screen and (max-width:31.25em){

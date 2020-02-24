@@ -12,6 +12,7 @@
     font-size: 4vw;
   }
   .avatar p {
+    font-size: 3vw;
     font-family: 'Arial';
     font-weight: bold;
   }
@@ -56,40 +57,27 @@
     background-color: #495c6a;
     color: #c7d2d8;
   }
-  form, table, input::-webkit-input-placeholder, textarea, input[type="submit"] {
-    font-family: 'OdibeeSans-Regular';
-    font-size: 4vw;
-  }
-  form, table, input:-ms-input-placeholder, textarea, input[type="submit"] {
-    font-family: 'OdibeeSans-Regular';
-    font-size: 4vw;
-  }
-  form, table, input::-ms-input-placeholder, textarea, input[type="submit"] {
-    font-family: 'OdibeeSans-Regular';
-    font-size: 4vw;
-  }
-  form, table, input::placeholder, textarea, input[type="submit"] {
-    font-family: 'OdibeeSans-Regular';
-    font-size: 4vw;
-  }
   form {
     width: 100%;
   }
-  form input::-webkit-input-placeholder, form textarea, form input[type="submit"] {
-    font-family: 'OdibeeSans-Regular';
-    font-size: 2.5vw;
+  form table th, form table td {
+    font-size: 5vw;
   }
-  form input:-ms-input-placeholder, form textarea, form input[type="submit"] {
+  form input::-webkit-input-placeholder, form input[type="submit"] {
     font-family: 'OdibeeSans-Regular';
-    font-size: 2.5vw;
+    font-size: 4vw;
   }
-  form input::-ms-input-placeholder, form textarea, form input[type="submit"] {
+  form input:-ms-input-placeholder, form input[type="submit"] {
     font-family: 'OdibeeSans-Regular';
-    font-size: 2.5vw;
+    font-size: 4vw;
   }
-  form input::placeholder, form textarea, form input[type="submit"] {
+  form input::-ms-input-placeholder, form input[type="submit"] {
     font-family: 'OdibeeSans-Regular';
-    font-size: 2.5vw;
+    font-size: 4vw;
+  }
+  form input::placeholder, form input[type="submit"] {
+    font-family: 'OdibeeSans-Regular';
+    font-size: 4vw;
   }
 }
 
@@ -100,9 +88,6 @@
   #flex {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-  }
-  textarea {
-    border-radius: 0;
   }
 }
 

@@ -189,17 +189,17 @@ form{
             text-align: center;
         }
     }
-    input,textarea{
-        padding:2%;
+    input{
+        padding:2vw;
         background-color:#c7d2d8;
-        border-radius: 20px 40px;
-        border:1px solid blue;
-        box-shadow:2px 2px #000;
+        border-radius: 2vw 2vw;
+        border:0.3vw solid blue;
+        box-shadow:0.3vw 0.3vw #000;
      }
-     textarea:focus, input:focus{
+     input:focus{
         outline: none;
     }
-     input::placeholder,textarea,input[type="submit"]{
+     input::placeholder,input[type="submit"]{
          color:#495c6a;
          font:{
             size:1vw;
