@@ -117,6 +117,9 @@ nav ul li{
     right:66%;
     background-color:#c7d2d8;
 }
+.quotes{
+    display:none;
+}
 //ARTICLE//
 figure{
     display: flex;
@@ -202,6 +205,7 @@ form{
             size:1vw;
             family:Lacquer-Regular;
         }
+        text-align: center;
      }
      input[type="submit"]:hover{
          background-color: blue;

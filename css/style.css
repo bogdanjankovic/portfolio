@@ -167,6 +167,10 @@ nav ul li {
   background-color: #c7d2d8;
 }
 
+.quotes {
+  display: none;
+}
+
 figure {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -271,24 +275,28 @@ form input::-webkit-input-placeholder, form textarea, form input[type="submit"] 
   color: #495c6a;
   font-size: 1vw;
   font-family: Lacquer-Regular;
+  text-align: center;
 }
 
 form input:-ms-input-placeholder, form textarea, form input[type="submit"] {
   color: #495c6a;
   font-size: 1vw;
   font-family: Lacquer-Regular;
+  text-align: center;
 }
 
 form input::-ms-input-placeholder, form textarea, form input[type="submit"] {
   color: #495c6a;
   font-size: 1vw;
   font-family: Lacquer-Regular;
+  text-align: center;
 }
 
 form input::placeholder, form textarea, form input[type="submit"] {
   color: #495c6a;
   font-size: 1vw;
   font-family: Lacquer-Regular;
+  text-align: center;
 }
 
 form input[type="submit"]:hover {
@@ -362,9 +370,28 @@ footer #magic {
             justify-content: stretch;
   }
   #middle .container #mid-relative1 p, #middle .container #mid-relative2 p {
+    border-radius: 0;
     position: static;
-    width: 100%;
+    width: 90%;
     margin-top: 10%;
+  }
+  #middle .container .quotes {
+    display: block;
+    background-color: #c7d2d8;
+    color: #495c6a;
+    margin-top: 10%;
+    width: 90%;
+    border: 1px  solid blue;
+    -webkit-box-shadow: 2px 2px #000;
+            box-shadow: 2px 2px #000;
+    padding: 1%;
+    font-size: 2vw;
+    font-weight: bold;
+    font-style: italic;
+  }
+  #middle .container .quotes.dark {
+    background-color: #495c6a;
+    color: #c7d2d8;
   }
   form, table, input::-webkit-input-placeholder, textarea, input[type="submit"] {
     font-family: 'OdibeeSans-Regular';
@@ -435,12 +462,10 @@ footer #magic {
   #middle {
     min-height: 20em;
   }
-  footer .container {
-    padding: 5%;
-  }
   footer .container #magic {
     padding: 2%;
     display: block;
+    font-size: 3vw;
   }
   footer .container #magic p {
     text-align: center;
