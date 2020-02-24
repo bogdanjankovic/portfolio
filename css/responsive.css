@@ -66,19 +66,19 @@
     margin-top: 30%;
   }
   form, table, input::-webkit-input-placeholder, textarea, input[type="submit"] {
-    font-family: 'Arial';
+    font-family: 'OdibeeSans-Regular';
     font-size: 4vw;
   }
   form, table, input:-ms-input-placeholder, textarea, input[type="submit"] {
-    font-family: 'Arial';
+    font-family: 'OdibeeSans-Regular';
     font-size: 4vw;
   }
   form, table, input::-ms-input-placeholder, textarea, input[type="submit"] {
-    font-family: 'Arial';
+    font-family: 'OdibeeSans-Regular';
     font-size: 4vw;
   }
   form, table, input::placeholder, textarea, input[type="submit"] {
-    font-family: 'Arial';
+    font-family: 'OdibeeSans-Regular';
     font-size: 4vw;
   }
   form {
@@ -88,19 +88,19 @@
     border-radius: none;
   }
   form input::-webkit-input-placeholder, form textarea, form input[type="submit"] {
-    font-family: 'Arial';
+    font-family: 'OdibeeSans-Regular';
     font-size: 2.5vw;
   }
   form input:-ms-input-placeholder, form textarea, form input[type="submit"] {
-    font-family: 'Arial';
+    font-family: 'OdibeeSans-Regular';
     font-size: 2.5vw;
   }
   form input::-ms-input-placeholder, form textarea, form input[type="submit"] {
-    font-family: 'Arial';
+    font-family: 'OdibeeSans-Regular';
     font-size: 2.5vw;
   }
   form input::placeholder, form textarea, form input[type="submit"] {
-    font-family: 'Arial';
+    font-family: 'OdibeeSans-Regular';
     font-size: 2.5vw;
   }
   #botleft i, #botright i {
