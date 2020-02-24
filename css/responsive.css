@@ -1,31 +1,3 @@
-@media screen and (max-width: 720px) {
-  #gallery figure {
-    width: 40%;
-  }
-  #flex {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  a, header h1 {
-    font-size: 4vw;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  a, header h1 {
-    font-size: 4.5vw;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  #middle {
-    background-position: left;
-  }
-}
-
 @media screen and (max-width: 51em) {
   input::-webkit-input-placeholder, textarea, input[type="submit"] {
     font-size: 4vw;
@@ -105,8 +77,18 @@
   }
 }
 
+@media screen and (max-width: 45em) {
+  #gallery figure {
+    width: 40%;
+  }
+  #flex {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
 @media screen and (max-width: 31.25em) {
-  a, header h1 {
+  header h1 {
     font-size: 5vw;
   }
   nav {
@@ -123,6 +105,24 @@
   }
   #middle {
     min-height: 20em;
+  }
+}
+
+@media screen and (max-width: 20em) {
+  header h1 {
+    font-size: 5.5vw;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #middle {
+    background-position: left;
+  }
+  textarea {
+    border: 0px;
+  }
+  #botleft, #botright {
+    i-font-size: 5vw;
   }
 }
 /*# sourceMappingURL=responsive.css.map */
