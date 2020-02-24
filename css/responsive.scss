@@ -6,12 +6,12 @@
 }
 @media screen and (max-width:480px){
     a,header h1{
-        font-size: 2vw;
+        font-size: 4vw;
     }
 }
 @media screen and (max-width:320px){
     a,header h1{
-        font-size: 3vw;
+        font-size: 4.5vw;
         justify-content: space-evenly;
     }
     #middle{
@@ -40,7 +40,7 @@
         #mid-relative1 p,#mid-relative2 p{
         position: static;
         width:100%;
-        margin-top: 30%;
+        margin-top: 10%;
     }}
     form,table,input::placeholder,textarea,input[type="submit"]{
         font:{
@@ -60,15 +60,24 @@
             }
         }
     }
-    #botleft i,#botright i{
-        font-size: 2vw;
-    }
 }
 @media screen and (max-width:31.25em){
+    a,header h1{
+        font-size: 5vw;
+    }
     nav{
         display:none;
     }
     #HiddenMenu{
         display:block;
+        i{
+            font-size: 5vw;
+        }
+    }
+     footer i{
+        font-size: 5vw;
+     }
+    #middle{
+        min-height:20em;
     }
 }
