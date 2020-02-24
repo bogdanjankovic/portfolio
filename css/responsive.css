@@ -22,7 +22,7 @@
             justify-content: space-evenly;
   }
   #middle {
-    background-position: center;
+    background-position: left;
   }
 }
 
@@ -39,14 +39,81 @@
   input::placeholder, textarea, input[type="submit"] {
     font-size: 4vw;
   }
+  .avatar p {
+    font-family: 'Arial';
+    font-weight: bold;
+  }
   .avatar img {
     max-width: 20%;
   }
-  #mid-relative1 p, #mid-relative2 p {
-    position: relative;
+  #middle .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+  }
+  #middle .container #mid-relative1 p, #middle .container #mid-relative2 p {
+    position: static;
+    width: 100%;
+    margin-top: 30%;
+  }
+  form, table, input::-webkit-input-placeholder, textarea, input[type="submit"] {
+    font-family: 'Arial';
+    font-size: 4vw;
+  }
+  form, table, input:-ms-input-placeholder, textarea, input[type="submit"] {
+    font-family: 'Arial';
+    font-size: 4vw;
+  }
+  form, table, input::-ms-input-placeholder, textarea, input[type="submit"] {
+    font-family: 'Arial';
+    font-size: 4vw;
+  }
+  form, table, input::placeholder, textarea, input[type="submit"] {
+    font-family: 'Arial';
+    font-size: 4vw;
+  }
+  form {
+    width: 100%;
+  }
+  form input, form textarea {
+    border-radius: none;
+  }
+  form input::-webkit-input-placeholder, form textarea, form input[type="submit"] {
+    font-family: 'Arial';
+    font-size: 2.5vw;
+  }
+  form input:-ms-input-placeholder, form textarea, form input[type="submit"] {
+    font-family: 'Arial';
+    font-size: 2.5vw;
+  }
+  form input::-ms-input-placeholder, form textarea, form input[type="submit"] {
+    font-family: 'Arial';
+    font-size: 2.5vw;
+  }
+  form input::placeholder, form textarea, form input[type="submit"] {
+    font-family: 'Arial';
+    font-size: 2.5vw;
   }
   #botleft i, #botright i {
     font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 31.25em) {
+  nav {
+    display: none;
+  }
+  #HiddenMenu {
+    display: block;
   }
 }
 /*# sourceMappingURL=responsive.css.map */
