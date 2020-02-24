@@ -296,7 +296,8 @@ form input[type="submit"]:hover {
   color: #fff;
 }
 
-footer .container {
+footer .container #icon-flex {
+  padding: 2%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -312,14 +313,18 @@ footer .container {
           justify-content: space-between;
 }
 
-footer .container #botleft, footer .container #botright {
+footer .container #icon-flex #botleft, footer .container #icon-flex #botright {
   text-align: center;
   width: 40%;
 }
 
-footer .container #botleft i, footer .container #botright i {
-  font-size: 5vw;
+footer .container #icon-flex #botleft i, footer .container #icon-flex #botright i {
+  font-size: 3vw;
   margin: 2%;
+}
+
+footer #magic {
+  display: none;
 }
 
 @media screen and (max-width: 51em) {
@@ -380,9 +385,6 @@ footer .container #botleft i, footer .container #botright i {
   form {
     width: 100%;
   }
-  form input, form textarea {
-    border-radius: none;
-  }
   form input::-webkit-input-placeholder, form textarea, form input[type="submit"] {
     font-family: 'OdibeeSans-Regular';
     font-size: 2.5vw;
@@ -409,6 +411,9 @@ footer .container #botleft i, footer .container #botright i {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
+  textarea {
+    border-radius: 0;
+  }
 }
 
 @media screen and (max-width: 31.25em) {
@@ -430,6 +435,16 @@ footer .container #botleft i, footer .container #botright i {
   #middle {
     min-height: 20em;
   }
+  footer .container {
+    padding: 5%;
+  }
+  footer .container #magic {
+    padding: 2%;
+    display: block;
+  }
+  footer .container #magic p {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 20em) {
@@ -440,10 +455,7 @@ footer .container #botleft i, footer .container #botright i {
             justify-content: space-evenly;
   }
   #middle {
-    background-position: left;
-  }
-  textarea {
-    border: 0px;
+    background-position: right;
   }
   #botleft, #botright {
     i-font-size: 5vw;

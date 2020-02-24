@@ -210,7 +210,8 @@ form{
 }
 //FOOTER//
 footer{
-    .container{
+    .container #icon-flex{
+        padding:2%;
         align-items: center;
         display:flex;
         flex-direction: row;
@@ -219,11 +220,13 @@ footer{
             text-align: center;
             width:40%;
             i{
-                font-size: 5vw;
+                font-size: 3vw;
                 margin:2%;
             }
-        }
-    }    
+        } 
+    } #magic{
+        display:none;
+    }
 }
 
 

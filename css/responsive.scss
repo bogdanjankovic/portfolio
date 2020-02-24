@@ -31,9 +31,6 @@
         }
     }
     form{
-        input,textarea{
-            border-radius: none;
-        }
         width:100%;
         input::placeholder,textarea,input[type="submit"]{
             font:{
@@ -47,6 +44,9 @@
     #gallery figure{ width:40%;} 
         #flex{
             flex-wrap:nowrap;
+    }
+    textarea{
+        border-radius: 0;
     }
 }
 @media screen and (max-width:31.25em){
@@ -68,6 +68,14 @@
     #middle{
         min-height:20em;
     }
+    footer .container{
+        padding:5%;
+        #magic{
+            padding:2%;
+            display:block;
+            p{text-align: center;}
+        }
+    } 
 }
 @media screen and (max-width:20em){
     header h1{
@@ -75,10 +83,7 @@
         justify-content: space-evenly;
     }
     #middle{
-        background-position: left;
-    }
-    textarea{
-        border:0px;
+        background-position: right;
     }
     #botleft,#botright{
         i:{font-size: 5vw;}

@@ -56,9 +56,6 @@
   form {
     width: 100%;
   }
-  form input, form textarea {
-    border-radius: none;
-  }
   form input::-webkit-input-placeholder, form textarea, form input[type="submit"] {
     font-family: 'OdibeeSans-Regular';
     font-size: 2.5vw;
@@ -85,6 +82,9 @@
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
+  textarea {
+    border-radius: 0;
+  }
 }
 
 @media screen and (max-width: 31.25em) {
@@ -106,6 +106,16 @@
   #middle {
     min-height: 20em;
   }
+  footer .container {
+    padding: 5%;
+  }
+  footer .container #magic {
+    padding: 2%;
+    display: block;
+  }
+  footer .container #magic p {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 20em) {
@@ -116,10 +126,7 @@
             justify-content: space-evenly;
   }
   #middle {
-    background-position: left;
-  }
-  textarea {
-    border: 0px;
+    background-position: right;
   }
   #botleft, #botright {
     i-font-size: 5vw;
