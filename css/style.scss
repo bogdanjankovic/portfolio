@@ -175,6 +175,12 @@ figure img{
     color:#495c6a;
 }
 //FORM//
+#form{
+    header h1{
+        color:#495c6a;
+        text-align: center;
+    }
+}
 form{
     width:90%;
     padding:1%;
@@ -232,6 +238,10 @@ footer{
         display:none;
     }
 }
+
+
+
+
 
 
 @import "responsive";

@@ -1,70 +1,12 @@
-﻿
-@media screen and (max-width:51em){
-
-    input::placeholder,textarea,input[type="submit"]{
-        font-size: 4vw;
+﻿@media screen and (max-width:20em){
+    header h1{
+        font-size: 5.5vw;
+        justify-content: space-evenly;
     }
-    .avatar p{
-        font:{
-            size:3vw;
-            family:'Arial';
-            weight:bold;
-        }
+    #middle{
+        background-position: right;
     }
-    .avatar img{
-        max-width:20%;
-    }
-    #middle .container{ 
-        display: flex;
-        flex-direction: column;
-        flex-wrap:wrap;
-        justify-content: stretch;
-        #mid-relative1 p,#mid-relative2 p{
-        border-radius: 0;
-        position: static;
-        width:90%;
-        margin-top: 10%;
-    }
-    .quotes{
-        display: block;
-        background-color:#c7d2d8;
-        color:#495c6a;
-        margin-top: 10%;
-        width:90%;
-        text-align: center;
-        border:1px  solid blue;
-        box-shadow:2px 2px #000;
-        padding:1%;
-        font:{
-            size:2vw;
-            weight:bold;
-            style:italic;
-        }
-    }
-    .quotes.dark{
-        background-color:#495c6a;
-        color:#c7d2d8;
-    }
-    }
-    form{
-        table th,table td{
-            font-size: 5vw;
-        }
-        width:100%;
-        input::placeholder,input[type="submit"]{
-            font:{
-                family:'OdibeeSans-Regular';
-                size:4vw;
-            }
-        }
-    }
-}
-@media screen and (max-width:45em){
-    #gallery figure{ width:40%;} 
-        #flex{
-            flex-wrap:nowrap;
-    }
-}
+} 
 @media screen and (max-width:31.25em){
     header h1{
         font-size: 5vw;
@@ -137,17 +79,85 @@
             p{text-align: center;}
             font-size: 3vw;
         }
-        #botleft, #botright{
-            font-size: 5vw;
+        #icon-flex{
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            #botleft, #botright{
+                font-size: 5vw;
+                width:100%;
+                i:hover{
+                    color:#c7d2d8;
+                }
+            }
+        }
         }
     } 
+
+@media screen and (max-width:45em){
+    #gallery figure{ width:40%;} 
+        #flex{
+            flex-wrap:nowrap;
+    }
 }
-@media screen and (max-width:20em){
-    header h1{
-        font-size: 5.5vw;
-        justify-content: space-evenly;
+
+@media screen and (max-width:51em){
+
+    input::placeholder,textarea,input[type="submit"]{
+        font-size: 4vw;
     }
-    #middle{
-        background-position: right;
+    .avatar p{
+        font:{
+            size:3vw;
+            family:'Arial';
+            weight:bold;
+        }
     }
-} 
+    .avatar img{
+        max-width:20%;
+    }
+    #middle .container{ 
+        display: flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        justify-content: stretch;
+        #mid-relative1 p,#mid-relative2 p{
+        border-radius: 0;
+        position: static;
+        width:90%;
+        margin-top: 10%;
+    }
+    .quotes{
+        display: block;
+        background-color:#c7d2d8;
+        color:#495c6a;
+        margin-top: 10%;
+        width:90%;
+        text-align: center;
+        border:1px  solid blue;
+        box-shadow:2px 2px #000;
+        padding:1%;
+        font:{
+            size:2vw;
+            weight:bold;
+            style:italic;
+        }
+    }
+    .quotes.dark{
+        background-color:#495c6a;
+        color:#c7d2d8;
+    }
+    }
+    form{
+        table th,table td{
+            font-size: 5vw;
+        }
+        width:100%;
+        input::placeholder,input[type="submit"]{
+            font:{
+                family:'OdibeeSans-Regular';
+                size:4vw;
+            }
+        }
+    }
+}

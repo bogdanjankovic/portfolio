@@ -242,6 +242,11 @@ figure img {
   color: #495c6a;
 }
 
+#form header h1 {
+  color: #495c6a;
+  text-align: center;
+}
+
 form {
   width: 90%;
   padding: 1%;
@@ -335,6 +340,114 @@ footer #magic {
   display: none;
 }
 
+@media screen and (max-width: 20em) {
+  header h1 {
+    font-size: 5.5vw;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #middle {
+    background-position: right;
+  }
+}
+
+@media screen and (max-width: 31.25em) {
+  header h1 {
+    font-size: 5vw;
+  }
+  nav {
+    display: none;
+  }
+  #HiddenMenu {
+    display: block;
+  }
+  #HiddenMenu #menu, #HiddenMenu #menu ul {
+    list-style: none;
+    padding: 0 0 26px 0;
+    margin: 0;
+  }
+  #HiddenMenu #menu li {
+    float: left;
+    margin-right: 3px;
+    position: relative;
+  }
+  #HiddenMenu #menu ul {
+    position: absolute;
+    top: 25px;
+    right: 1px;
+    width: 100px;
+    padding: 0;
+    display: none;
+  }
+  #HiddenMenu #menu ul li {
+    float: none;
+    margin: 0;
+    padding: 0;
+    line-height: 15px;
+    background-color: #1a1a1c;
+    border: 1px solid #000;
+  }
+  #HiddenMenu #menu a:link, #HiddenMenu #menu a:visited {
+    display: block;
+    font-family: Tahoma;
+    font-size: 0.75em;
+    font-weight: bold;
+    text-align: left;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+  }
+  #HiddenMenu #menu li:hover {
+    background-color: #1f1f20;
+  }
+  #HiddenMenu #menu li:hover ul {
+    display: block;
+  }
+  #HiddenMenu i {
+    font-size: 5vw;
+  }
+  #middle {
+    min-height: 20em;
+  }
+  footer .container #magic {
+    padding: 2%;
+    display: block;
+    font-size: 3vw;
+  }
+  footer .container #magic p {
+    text-align: center;
+  }
+  footer .container #icon-flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .container #icon-flex #botleft, footer .container #icon-flex #botright {
+    font-size: 5vw;
+    width: 100%;
+  }
+  footer .container #icon-flex #botleft i:hover, footer .container #icon-flex #botright i:hover {
+    color: #c7d2d8;
+  }
+}
+
+@media screen and (max-width: 45em) {
+  #gallery figure {
+    width: 40%;
+  }
+  #flex {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
 @media screen and (max-width: 51em) {
   input::-webkit-input-placeholder, textarea, input[type="submit"] {
     font-size: 4vw;
@@ -416,99 +529,6 @@ footer #magic {
   form input::placeholder, form input[type="submit"] {
     font-family: 'OdibeeSans-Regular';
     font-size: 4vw;
-  }
-}
-
-@media screen and (max-width: 45em) {
-  #gallery figure {
-    width: 40%;
-  }
-  #flex {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-}
-
-@media screen and (max-width: 31.25em) {
-  header h1 {
-    font-size: 5vw;
-  }
-  nav {
-    display: none;
-  }
-  #HiddenMenu {
-    display: block;
-  }
-  #HiddenMenu #menu, #HiddenMenu #menu ul {
-    list-style: none;
-    padding: 0 0 26px 0;
-    margin: 0;
-  }
-  #HiddenMenu #menu li {
-    float: left;
-    margin-right: 3px;
-    position: relative;
-  }
-  #HiddenMenu #menu ul {
-    position: absolute;
-    top: 25px;
-    right: 1px;
-    width: 100px;
-    padding: 0;
-    display: none;
-  }
-  #HiddenMenu #menu ul li {
-    float: none;
-    margin: 0;
-    padding: 0;
-    line-height: 15px;
-    background-color: #1a1a1c;
-    border: 1px solid #000;
-  }
-  #HiddenMenu #menu a:link, #HiddenMenu #menu a:visited {
-    display: block;
-    font-family: Tahoma;
-    font-size: 0.75em;
-    font-weight: bold;
-    text-align: left;
-    text-decoration: none;
-    color: #fff;
-    padding: 5px;
-  }
-  #HiddenMenu #menu li:hover {
-    background-color: #1f1f20;
-  }
-  #HiddenMenu #menu li:hover ul {
-    display: block;
-  }
-  #HiddenMenu i {
-    font-size: 5vw;
-  }
-  #middle {
-    min-height: 20em;
-  }
-  footer .container #magic {
-    padding: 2%;
-    display: block;
-    font-size: 3vw;
-  }
-  footer .container #magic p {
-    text-align: center;
-  }
-  footer .container #botleft, footer .container #botright {
-    font-size: 5vw;
-  }
-}
-
-@media screen and (max-width: 20em) {
-  header h1 {
-    font-size: 5.5vw;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  #middle {
-    background-position: right;
   }
 }
 /*# sourceMappingURL=style.css.map */
