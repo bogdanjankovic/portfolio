@@ -327,7 +327,7 @@ footer .container #icon-flex #botleft, footer .container #icon-flex #botright {
 }
 
 footer .container #icon-flex #botleft i, footer .container #icon-flex #botright i {
-  font-size: 3vw;
+  font-size: 5vw;
   margin: 2%;
 }
 
@@ -382,6 +382,7 @@ footer #magic {
     color: #495c6a;
     margin-top: 10%;
     width: 90%;
+    text-align: center;
     border: 1px  solid blue;
     -webkit-box-shadow: 2px 2px #000;
             box-shadow: 2px 2px #000;
@@ -438,10 +439,49 @@ footer #magic {
   #HiddenMenu {
     display: block;
   }
-  #HiddenMenu i {
-    font-size: 5vw;
+  #HiddenMenu #menu, #HiddenMenu #menu ul {
+    list-style: none;
+    padding: 0 0 26px 0;
+    margin: 0;
   }
-  footer i {
+  #HiddenMenu #menu li {
+    float: left;
+    margin-right: 3px;
+    position: relative;
+  }
+  #HiddenMenu #menu ul {
+    position: absolute;
+    top: 25px;
+    right: 1px;
+    width: 100px;
+    padding: 0;
+    display: none;
+  }
+  #HiddenMenu #menu ul li {
+    float: none;
+    margin: 0;
+    padding: 0;
+    line-height: 15px;
+    background-color: #1a1a1c;
+    border: 1px solid #000;
+  }
+  #HiddenMenu #menu a:link, #HiddenMenu #menu a:visited {
+    display: block;
+    font-family: Tahoma;
+    font-size: 0.75em;
+    font-weight: bold;
+    text-align: left;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+  }
+  #HiddenMenu #menu li:hover {
+    background-color: #1f1f20;
+  }
+  #HiddenMenu #menu li:hover ul {
+    display: block;
+  }
+  #HiddenMenu i {
     font-size: 5vw;
   }
   #middle {
@@ -455,6 +495,9 @@ footer #magic {
   footer .container #magic p {
     text-align: center;
   }
+  footer .container #botleft, footer .container #botright {
+    font-size: 5vw;
+  }
 }
 
 @media screen and (max-width: 20em) {
@@ -466,9 +509,6 @@ footer #magic {
   }
   #middle {
     background-position: right;
-  }
-  #botleft, #botright {
-    i-font-size: 5vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
