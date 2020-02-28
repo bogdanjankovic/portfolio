@@ -49,6 +49,9 @@ a,header h1{
     font-family:$font1;
     font-size: 2vw;
 }
+a:hover{
+    color:$color1;
+}
 //HEADER//
 #HiddenMenu{
     display:none;
@@ -198,7 +201,7 @@ figure img{
           }
       }
       .text a:hover{
-          background-color: #1a1a1c;
+          background-color: blue;
           color:#fff;
       }
     figure{
@@ -249,14 +252,14 @@ form{
         padding:2vw;
         background-color:$color1;
         border-radius: 2vw 2vw;
-        border:0.3vw solid blue;
+        border:0.1vw solid blue;
         box-shadow:0.3vw 0.3vw #000;
      }
      input:focus{
         outline: none;
     }
      input::placeholder,input[type="submit"]{
-         color:#495c6a;
+         color:$color2;
          font:{
             size:1vw;
             family:$font2;
@@ -276,11 +279,11 @@ footer{
         display:flex;
         flex-direction: row;
         justify-content: space-between;
-        #botleft, #botright{
+        div{
             text-align: center;
             width:40%;
             i{
-                font-size: 5vw;
+                font-size: 3vw;
                 margin:2%;
             }
         } 

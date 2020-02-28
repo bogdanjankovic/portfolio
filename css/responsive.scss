@@ -66,7 +66,7 @@
 	display: block;
 }
         i{
-            font-size: 3vw;
+            font-size: 4.5vw;
         }
     }
     #middle{
@@ -83,9 +83,12 @@
             flex-wrap: wrap;
             flex-direction: column;
             justify-content: center;
-            #botleft, #botright{
-                font-size: 5vw;
+            div{
                 width:100%;
+                a{
+                    margin:2%;
+                    i{font-size: 5vw;}
+                }
                 i:hover{
                     color:$color1;
                 }
@@ -129,7 +132,7 @@
     }
     .quotes{
         display: block;
-        background-color:  $color1;;
+        background-color:  $color1;
         color:$color2;
         margin-top: 10%;
         width:90%;

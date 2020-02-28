@@ -80,6 +80,10 @@ a, header h1 {
   font-size: 2vw;
 }
 
+a:hover {
+  color: #c7d2d8;
+}
+
 #HiddenMenu {
   display: none;
 }
@@ -268,7 +272,7 @@ figure img {
 }
 
 #gallery .text a:hover {
-  background-color: #1a1a1c;
+  background-color: blue;
   color: #fff;
 }
 
@@ -324,7 +328,7 @@ form input {
   padding: 2vw;
   background-color: #c7d2d8;
   border-radius: 2vw 2vw;
-  border: 0.3vw solid blue;
+  border: 0.1vw solid blue;
   -webkit-box-shadow: 0.3vw 0.3vw #000;
           box-shadow: 0.3vw 0.3vw #000;
 }
@@ -383,13 +387,13 @@ footer .container #icon-flex {
           justify-content: space-between;
 }
 
-footer .container #icon-flex #botleft, footer .container #icon-flex #botright {
+footer .container #icon-flex div {
   text-align: center;
   width: 40%;
 }
 
-footer .container #icon-flex #botleft i, footer .container #icon-flex #botright i {
-  font-size: 5vw;
+footer .container #icon-flex div i {
+  font-size: 3vw;
   margin: 2%;
 }
 
@@ -462,7 +466,7 @@ footer #magic {
     display: block;
   }
   #HiddenMenu i {
-    font-size: 3vw;
+    font-size: 4.5vw;
   }
   #middle {
     min-height: 20em;
@@ -486,11 +490,16 @@ footer #magic {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  footer .container #icon-flex #botleft, footer .container #icon-flex #botright {
-    font-size: 5vw;
+  footer .container #icon-flex div {
     width: 100%;
   }
-  footer .container #icon-flex #botleft i:hover, footer .container #icon-flex #botright i:hover {
+  footer .container #icon-flex div a {
+    margin: 2%;
+  }
+  footer .container #icon-flex div a i {
+    font-size: 5vw;
+  }
+  footer .container #icon-flex div i:hover {
     color: #c7d2d8;
   }
 }
