@@ -221,6 +221,8 @@ figure img {
 
 #gallery .picturetext {
   position: relative;
+  -webkit-box-shadow: 0.5vw 0.5vw 0.5vw;
+          box-shadow: 0.5vw 0.5vw 0.5vw;
 }
 
 #gallery .picturetext:hover .overlay {
@@ -253,12 +255,21 @@ figure img {
   font-family: Lacquer-Regular;
 }
 
+#gallery .text p {
+  font-size: 2vw;
+}
+
 #gallery .text a {
   border: 1px solid blue;
   background-color: #c7d2d8;
   color: #495c6a;
   padding: 2%;
-  font-size: 4vw;
+  font-size: 3.5vw;
+}
+
+#gallery .text a:hover {
+  background-color: #1a1a1c;
+  color: #fff;
 }
 
 #gallery figure {
@@ -275,6 +286,10 @@ figure img {
 
 .avatar {
   padding: 2%;
+}
+
+.avatar img {
+  border-radius: 100%;
 }
 
 #gallery, #form {
