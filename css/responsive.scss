@@ -66,7 +66,7 @@
 	display: block;
 }
         i{
-            font-size: 5vw;
+            font-size: 3vw;
         }
     }
     #middle{
@@ -87,7 +87,7 @@
                 font-size: 5vw;
                 width:100%;
                 i:hover{
-                    color:#c7d2d8;
+                    color:$color1;
                 }
             }
         }
@@ -129,8 +129,8 @@
     }
     .quotes{
         display: block;
-        background-color:#c7d2d8;
-        color:#495c6a;
+        background-color:  $color1;;
+        color:$color2;
         margin-top: 10%;
         width:90%;
         text-align: center;
@@ -145,7 +145,7 @@
     }
     .quotes.dark{
         background-color:#495c6a;
-        color:#c7d2d8;
+        color:$color1;
     }
     }
     form{
@@ -155,7 +155,7 @@
         width:100%;
         input::placeholder,input[type="submit"]{
             font:{
-                family:'OdibeeSans-Regular';
+                family:$font1;
                 size:4vw;
             }
         }
