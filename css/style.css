@@ -13,6 +13,15 @@
   margin: 0px;
 }
 
+span {
+  color: blue;
+  font-weight: bold;
+}
+
+.wUnderline {
+  text-decoration: underline;
+}
+
 img {
   max-width: 100%;
 }
