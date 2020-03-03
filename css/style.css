@@ -82,11 +82,16 @@ body {
   margin: 0px auto;
 }
 
-a, header h1 {
+a {
   text-decoration: none;
   color: #fff;
   font-family: OdibeeSans-Regular;
   font-size: 2vw;
+}
+
+header h1 {
+  font-size: 3vw;
+  font-family: OdibeeSans-Regular;
 }
 
 a:hover {
@@ -95,10 +100,6 @@ a:hover {
 
 #HiddenMenu {
   display: none;
-}
-
-header h1 {
-  font-size: 2vw;
 }
 
 #top {
@@ -182,6 +183,87 @@ nav ul li {
 
 .quotes {
   display: none;
+}
+
+#skills {
+  padding: 2%;
+  background-color: #c7d2d8;
+}
+
+#skills ul {
+  list-style-type: none;
+}
+
+#skills h1 {
+  text-align: center;
+  color: #495c6a;
+}
+
+#skills h3 {
+  font-family: OdibeeSans-Regular;
+  text-align: right;
+  font-size: 2.5vw;
+  color: #495c6a;
+}
+
+#skills .bar {
+  background-color: #495c6a;
+  display: block;
+  height: 1vw;
+  border: 0.01vw solid rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 1vw blue;
+          box-shadow: 0 0 1vw blue;
+  margin-top: 1vw;
+  margin-bottom: 3vw;
+}
+
+#skills .bar .fill {
+  height: inherit;
+  background-color: blue;
+  float: left;
+}
+
+#skills .bar #html-bar {
+  width: 97%;
+  -webkit-animation: fill 2s;
+          animation: fill 2s;
+}
+
+#skills .bar #css3-bar {
+  width: 95%;
+  -webkit-animation: fill 2s;
+          animation: fill 2s;
+}
+
+#skills .bar #sass-bar {
+  width: 94%;
+  -webkit-animation: fill 2s;
+          animation: fill 2s;
+}
+
+#skills .bar #bootstrap-bar {
+  width: 70%;
+  -webkit-animation: fill 2s;
+          animation: fill 2s;
+}
+
+#skills .bar #materialize-bar {
+  width: 74%;
+  -webkit-animation: fill 2s;
+          animation: fill 2s;
+}
+
+@-webkit-keyframes fill {
+  0% {
+    Width: 0;
+  }
+}
+
+@keyframes fill {
+  0% {
+    Width: 0;
+  }
 }
 
 figure {
@@ -335,8 +417,8 @@ form table td {
 
 form input {
   padding: 2vw;
-  background-color: #c7d2d8;
-  border-radius: 2vw 2vw;
+  background-color: #fff;
+  border-radius: 2vw 4vw 2vw 4vw;
   border: 0.1vw solid blue;
   -webkit-box-shadow: 0.3vw 0.3vw #000;
           box-shadow: 0.3vw 0.3vw #000;
@@ -372,6 +454,12 @@ form input::placeholder, form input[type="submit"] {
   font-size: 1vw;
   font-family: Lacquer-Regular;
   text-align: center;
+}
+
+form input[type="submit"] {
+  border-radius: 2vw 2vw;
+  background-color: #1a1a1c;
+  color: #fff;
 }
 
 form input[type="submit"]:hover {

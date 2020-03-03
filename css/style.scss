@@ -32,7 +32,6 @@ img{max-width:100%;}
       typing 3.5s steps(40, end),
       blink-caret .75s step-end 8;
   }
-  
   @keyframes typing {
     from { width: 0 }
     to { width: 100% }
@@ -50,11 +49,15 @@ body{
     width:95%;
     margin:0px auto;
 }
-a,header h1{
+a{
     text-decoration: none;
     color:#fff;
     font-family:$font1;
     font-size: 2vw;
+}
+header h1{
+    font-size:3vw;
+    font-family:$font1;
 }
 a:hover{
     color:$color1;
@@ -62,9 +65,6 @@ a:hover{
 //HEADER//
 #HiddenMenu{
     display:none;
-}
-header h1{
-    font-size: 2vw;
 }
 #top{
     box-shadow:2px 2px 8px #000;
@@ -95,7 +95,7 @@ nav ul,header .container{
 nav ul li{
     margin-right: 5%;
 }
-//SREDINA//
+//MIDDLE//
 #middle{
     background:{
         image:url('../img/development.jpg');
@@ -133,6 +133,63 @@ nav ul li{
 .quotes{
     display:none;
 }
+//SKILLS//
+#skills{
+    padding:2%;
+    background-color: $color1;
+    ul{
+       list-style-type:none;
+    }
+    h1{text-align: center; color:$color2;
+    }
+    h3{
+        font-family:$font1;
+        text-align: right;
+        font-size: 2.5vw;
+        color:$color2;
+    }
+    .bar{
+        background-color: $color2;
+        display: block;
+        height:1vw;  
+        border:0.01vw solid rgba(0,0,0,0.3);
+        overflow: hidden;
+        box-shadow: 0 0 1vw blue;
+        margin-top:1vw;
+        margin-bottom:3vw;
+        .fill{
+            height:inherit;
+            background-color: blue;
+            float:left;
+        }
+        #html-bar{
+            width:97%;
+            animation: fill 2s;
+        }
+        #css3-bar{
+            width:95%;
+            animation: fill 2s;
+        }
+        #sass-bar{
+            width:94%;
+            animation: fill 2s;
+        }
+        #bootstrap-bar{
+            width:70%;
+            animation: fill 2s;
+        }
+        #materialize-bar{
+            width:74%;
+            animation: fill 2s;
+        }
+        @keyframes fill{
+           0%{
+               Width: 0;
+           }
+       }
+    }
+}
+ 
 //ARTICLE//
 figure{
     display: flex;
@@ -257,8 +314,8 @@ form{
     }
     input{
         padding:2vw;
-        background-color:$color1;
-        border-radius: 2vw 2vw;
+        background-color:#fff;
+        border-radius: 2vw 4vw 2vw 4vw;
         border:0.1vw solid blue;
         box-shadow:0.3vw 0.3vw #000;
      }
@@ -273,6 +330,11 @@ form{
         }
         text-align: center;
      }
+     input[type="submit"]{
+        border-radius: 2vw 2vw;
+        background-color:#1a1a1c;
+        color:#fff;
+    }
      input[type="submit"]:hover{
          background-color: blue;
          color:#fff;
