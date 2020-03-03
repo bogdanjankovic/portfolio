@@ -3,9 +3,6 @@
         font-size: 5.5vw;
         justify-content: space-evenly;
     }
-    #middle{
-        background-position: right;
-    }
 } 
 @media screen and (max-width:31.25em){
     header h1{
@@ -71,6 +68,7 @@
     }
     #middle{
         min-height:20em;
+        background-position: right;
     }
     footer .container{
         #magic{
@@ -78,6 +76,7 @@
             display:block;
             p{text-align: center;}
             font-size: 3vw;
+            #cv{font-size: 3vw;}
         }
         #icon-flex{
             flex-wrap: wrap;

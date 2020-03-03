@@ -152,7 +152,7 @@ nav ul li {
   background-repeat: no-repeat;
   padding: 3%;
   position: relative;
-  min-height: 40em;
+  min-height: 45em;
 }
 
 #mid-relative1 p, #mid-relative2 p {
@@ -567,6 +567,7 @@ footer #magic {
   }
   #middle {
     min-height: 20em;
+    background-position: right;
   }
   footer .container #magic {
     padding: 2%;
@@ -575,6 +576,9 @@ footer #magic {
   }
   footer .container #magic p {
     text-align: center;
+  }
+  footer .container #magic #cv {
+    font-size: 3vw;
   }
   footer .container #icon-flex {
     -ms-flex-wrap: wrap;
