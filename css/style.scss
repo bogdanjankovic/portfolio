@@ -4,12 +4,13 @@ $font1:'B612', sans-serif;
 $font2:'Varela', sans-serif;
 $color1:#c7d2d8;
 $color2:#495c6a;
+$color3:#016198;
 *{
     padding: 0px;
     margin: 0px;
 }
 span{
-    color:blue;
+    color:$color3;
     font-weight: bold;
 }
 .wUnderline{
@@ -108,7 +109,7 @@ nav ul li{
         style:italic;
     }
     position:absolute;
-    border:1px  solid blue;
+    border:1px  solid $color3;
     padding:1%;
     box-shadow:2px 2px #000;
 }
@@ -131,12 +132,12 @@ nav ul li{
 #skills{
     padding:4%;
     background-color: $color1;
-    box-shadow: 0.5vw 0.5vw 0.5vw;
     ul{
+        margin-top: 2vw;
        list-style-type:none;
        text-align: center;
     }
-    h1{text-align: center; color:$color2;
+    h1{text-align: center; color:$color3;
     }
     h3{
         font-family:$font1;
@@ -150,13 +151,13 @@ nav ul li{
         height:1vw;  
         border:0.01vw solid rgba(0,0,0,0.3);
         overflow: hidden;
-        box-shadow: 0 0 1vw blue;
+        box-shadow: 0 0 1vw $color3;
         margin-top:1vw;
         margin-bottom:3vw;
         margin-left: auto; margin-right:auto;
         .fill{
             height:inherit;
-            background-color: blue;
+            background-color: $color3;
             float:left;
         }
         #html-bar{
@@ -208,7 +209,7 @@ figure div p{
 //GALLERY//
 #gallery{
     header h1{
-        color:$color2;
+        color:$color3;
         text-align: center;
     }
     #flex{
@@ -249,7 +250,7 @@ figure div p{
         font-family: $font2;
         p{font-size: 2vw;}
          a{
-            border:1px solid blue;
+            border:1px solid $color3;
             background-color: $color1;
             color:$color2;
             padding:2%;
@@ -257,7 +258,7 @@ figure div p{
           }
       }
       .text a:hover{
-          background-color: blue;
+          background-color: $color3;
           color:#fff;
       }
     figure{
@@ -285,8 +286,11 @@ figure div p{
 }
 //FORM//
 #form{
+    header{
+        margin-bottom: 2vw;
+    }
     header h1{
-        color:$color2;
+        color:$color3;
         text-align: center;
     }
 }
@@ -308,7 +312,7 @@ form{
         padding:2vw;
         background-color:#fff;
         
-        border:0.1vw solid blue;
+        border:0.1vw solid $color3;
         box-shadow:0.3vw 0.3vw #000;
      }
      input:focus{
@@ -329,7 +333,7 @@ form{
         color:#fff;
     }
      input[type="submit"]:hover{
-         background-color: blue;
+         background-color: $color3;
          color:#fff;
      }
 }
