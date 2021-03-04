@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="css/min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <meta name="description" content="My name is Bogdan Jankovic, here you can learn everything regarding my abilities, previous projects and contact information. Welcome to my portfolio!"/>
     <meta name="keywords" content="Bogdan,Jankovic,Projects,Skills,Contact"/>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
@@ -27,13 +28,13 @@
                     <li><a href="#aboutme"><p>ABOUT</p></a></li>
                     <li><a href="#myskills" ><p>SKILLS</p></a></li>
                     <li><a href="#myprojects"><p>PROJECTS</p></a></li>
-                    <li><a href="#contactme"><p>CONTACT</p></a></li> 
+                    <li><a href="#contactme"><p>CONTACT</p></a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <!--MIDDLE-->
-    <section id="middle">
+    <section data-aos="fade-up" data-aos-duration="3000" id="middle">
         <div class="container">
             <div id="mid-relative1">
                 <p>"The desire to create is one of the deepest yearnings of the human soul." -- Dieter F. Uchtdorf</p>
@@ -62,23 +63,13 @@
         </div>
     </article>
     <!--SKILLS-->
-    <section id="skills">
+    <section id="skills" data-aos="fade-down">
        <header><h1> SKILLS</h1></header> 
         <ul>
-            <li>
- 
-            </li><h3>HTML5</h3><span class="bar"> <span class="fill" id="html-bar"></span> </span>
-            <li>
- 
+        </li><h3>HTML5</h3><span class="bar"> <span class="fill" id="html-bar"></span> </span>
          </li><h3>CSS3</h3><span class="bar"> <span class="fill" id="css3-bar"></span> </span>
-         <li>
- 
          </li><h3>SASS</h3><span class="bar"> <span class="fill" id="sass-bar"></span> </span>
-         <li>
- 
          </li><h3>BOOTSRAP</h3><span class="bar"> <span class="fill" id="bootstrap-bar"></span> </span>
-         <li>
- 
          </li><h3>MATERIALIZE</h3><span class="bar"> <span class="fill" id="materialize-bar"></span> </span>
         </ul><a id="myprojects"></a>
     </section>
@@ -126,7 +117,7 @@
         <figure class="avatar">
             <img src="img/bjweb.jpg" alt="myFace">
             <div>
-                <p>I am currently a <span>freelancer</span>, readily accepting any kind of work for a reasonable fee. Feel free to contact me by filling the form bellow.</p>
+                <p>I am currently a <span>freelancer</span>, readily accepting any kind of work for a reasonable fee. Feel free to contact me by filling the form below.</p>
             </div>
         </figure><a id="contactme"></a>
     </div>
@@ -166,7 +157,7 @@
             <div id="magic"><p>&copy; 2020 Bogdan Jankovic. All rights reserved. <br/> <br/> <a id="cv" href="budgetcv.pdf" target="_blank">View CV <i class="fas fa-file-download"></i></a> </p></div>
             <div id="icon-flex">
                 <div>
-                    <a href="https://www.facebook.com/blexout " target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a> <a href="https://www.instagram.com/jankovic_d_bogdan/" target="_blank"><i class="fab fa-instagram"></i></a> <a href="https://www.twitch.tv/fujg_sensei" target="_blank"><i class="fab fa-twitch"></i></a> <a href="https://www.linkedin.com/in/bogdan-jankovi%C4%87-53175b115/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/blexout " target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a> <a href="https://www.instagram.com/jankovic_d_bogdan/" target="_blank"><i class="fab fa-instagram"></i></a> <a href="https://www.twitch.tv/blexout" target="_blank"><i class="fab fa-twitch"></i></a> <a href="https://www.linkedin.com/in/bogdan-jankovi%C4%87-53175b115/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </div>
                 <div>
                     <a href="css/style.scss" target="_blank"><i class="fab fa-sass"></i></a><a href="css/responsive.scss" target="_blank"><i class="fas fa-mobile"></i></a> <a href="sitemap.xml" target="_blank"><i class="fa fa-sitemap" aria-hidden="true"></i></a>
@@ -174,6 +165,9 @@
             </div>
         </div>
     </footer>
-
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
