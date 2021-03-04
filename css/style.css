@@ -1,13 +1,5 @@
-@font-face {
-  font-family: OdibeeSans-Regular;
-  src: url(OdibeeSans-Regular.ttf);
-}
-
-@font-face {
-  font-family: Lacquer-Regular;
-  src: url(Lacquer-Regular.ttf);
-}
-
+@import url("https://fonts.googleapis.com/css2?family=B612&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=B612&family=Varela&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -80,18 +72,19 @@ body {
 .container {
   width: 95%;
   margin: 0px auto;
+  padding: 1%;
 }
 
 a {
   text-decoration: none;
   color: #fff;
-  font-family: OdibeeSans-Regular;
-  font-size: 2vw;
+  font-family: "B612", sans-serif;
+  font-size: 1.5vw;
 }
 
 header h1 {
   font-size: 3vw;
-  font-family: OdibeeSans-Regular;
+  font-family: "B612", sans-serif;
 }
 
 a:hover {
@@ -143,7 +136,7 @@ nav ul, header .container {
 }
 
 nav ul li {
-  margin-right: 5%;
+  margin-right: 1vw;
 }
 
 #middle {
@@ -161,7 +154,6 @@ nav ul li {
   font-style: italic;
   position: absolute;
   border: 1px  solid blue;
-  border-radius: 20px 40px;
   padding: 1%;
   -webkit-box-shadow: 2px 2px #000;
           box-shadow: 2px 2px #000;
@@ -186,12 +178,15 @@ nav ul li {
 }
 
 #skills {
-  padding: 2%;
+  padding: 4%;
   background-color: #c7d2d8;
+  -webkit-box-shadow: 0.5vw 0.5vw 0.5vw;
+          box-shadow: 0.5vw 0.5vw 0.5vw;
 }
 
 #skills ul {
   list-style-type: none;
+  text-align: center;
 }
 
 #skills h1 {
@@ -200,13 +195,13 @@ nav ul li {
 }
 
 #skills h3 {
-  font-family: OdibeeSans-Regular;
-  text-align: right;
+  font-family: "B612", sans-serif;
   font-size: 2.5vw;
   color: #495c6a;
 }
 
 #skills .bar {
+  width: 50%;
   background-color: #495c6a;
   display: block;
   height: 1vw;
@@ -216,6 +211,8 @@ nav ul li {
           box-shadow: 0 0 1vw blue;
   margin-top: 1vw;
   margin-bottom: 3vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #skills .bar .fill {
@@ -286,13 +283,8 @@ figure div {
 
 figure div p {
   font-size: 2vw;
-  font-family: Lacquer-Regular;
+  font-family: "Varela", sans-serif;
   text-align: center;
-}
-
-figure img {
-  display: block;
-  height: auto;
 }
 
 #gallery header h1 {
@@ -347,7 +339,7 @@ figure img {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-align: center;
-  font-family: Lacquer-Regular;
+  font-family: "Varela", sans-serif;
 }
 
 #gallery .text p {
@@ -384,7 +376,7 @@ figure img {
 }
 
 .avatar img {
-  border-radius: 100%;
+  width: 20%;
 }
 
 #gallery, #form {
@@ -403,7 +395,7 @@ form {
   width: 90%;
   padding: 1%;
   font-size: 2vw;
-  font-family: Lacquer-Regular;
+  font-family: "Varela", sans-serif;
 }
 
 form table {
@@ -418,7 +410,6 @@ form table td {
 form input {
   padding: 2vw;
   background-color: #fff;
-  border-radius: 2vw 4vw 2vw 4vw;
   border: 0.1vw solid blue;
   -webkit-box-shadow: 0.3vw 0.3vw #000;
           box-shadow: 0.3vw 0.3vw #000;
@@ -431,28 +422,28 @@ form input:focus {
 form input::-webkit-input-placeholder, form input[type="submit"] {
   color: #495c6a;
   font-size: 1vw;
-  font-family: Lacquer-Regular;
+  font-family: "Varela", sans-serif;
   text-align: center;
 }
 
 form input:-ms-input-placeholder, form input[type="submit"] {
   color: #495c6a;
   font-size: 1vw;
-  font-family: Lacquer-Regular;
+  font-family: "Varela", sans-serif;
   text-align: center;
 }
 
 form input::-ms-input-placeholder, form input[type="submit"] {
   color: #495c6a;
   font-size: 1vw;
-  font-family: Lacquer-Regular;
+  font-family: "Varela", sans-serif;
   text-align: center;
 }
 
 form input::placeholder, form input[type="submit"] {
   color: #495c6a;
   font-size: 1vw;
-  font-family: Lacquer-Regular;
+  font-family: "Varela", sans-serif;
   text-align: center;
 }
 
@@ -505,8 +496,25 @@ footer #magic {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  #middle {
-    background-position: right;
+  #flex figure {
+    width: 80%;
+  }
+  #flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .avatar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .avatar img {
+    width: 100%;
+  }
+  .avatar div {
+    width: 80%;
   }
 }
 
@@ -603,15 +611,18 @@ footer #magic {
   footer .container #icon-flex div i:hover {
     color: #c7d2d8;
   }
-}
-
-@media screen and (max-width: 45em) {
-  #gallery figure {
-    width: 40%;
+  .avatar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  #flex {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+  .avatar img {
+    width: 100%;
+    margin-top: 3%;
+  }
+  .avatar div {
+    width: 100%;
   }
 }
 
@@ -629,12 +640,14 @@ footer #magic {
     font-size: 4vw;
   }
   .avatar p {
+    width: 80%;
+    margin: 0px auto;
     font-size: 3vw;
     font-family: 'Arial';
     font-weight: bold;
   }
   .avatar img {
-    max-width: 20%;
+    max-width: 40%;
   }
   #middle .container {
     display: -webkit-box;
@@ -682,20 +695,20 @@ footer #magic {
     font-size: 5vw;
   }
   form input::-webkit-input-placeholder, form input[type="submit"] {
-    font-family: OdibeeSans-Regular;
-    font-size: 4vw;
+    font-family: "B612", sans-serif;
+    font-size: 3vw;
   }
   form input:-ms-input-placeholder, form input[type="submit"] {
-    font-family: OdibeeSans-Regular;
-    font-size: 4vw;
+    font-family: "B612", sans-serif;
+    font-size: 3vw;
   }
   form input::-ms-input-placeholder, form input[type="submit"] {
-    font-family: OdibeeSans-Regular;
-    font-size: 4vw;
+    font-family: "B612", sans-serif;
+    font-size: 3vw;
   }
   form input::placeholder, form input[type="submit"] {
-    font-family: OdibeeSans-Regular;
-    font-size: 4vw;
+    font-family: "B612", sans-serif;
+    font-size: 3vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
